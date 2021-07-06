@@ -3,10 +3,13 @@ import pandas as pd
 
 df = pd.read_csv('bundesliga_top7_offensive.csv')
 
-st.write('# Bundesliga Top 7 Teams Offensive Stats 2020/2021')
+st.write('''# Bundesliga Top 7 Teams Offensive Stats 2020/2021
+- Created by: Fachry Tarigan
+- Source: **Kaggle** [Click Here](https://www.kaggle.com/rajatrc1705/bundesliga-top-7-teams-offensive-stats)
+''')
 
 option = st.selectbox(
-    'Choose club?',
+    'Choose club',
     (df.Club.unique()))
 
 st.write('You selected:', option)
